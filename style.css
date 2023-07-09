@@ -1,3 +1,10 @@
+#bg {
+    z-index: 1;
+    background-size: 110%;
+    background-repeat: repeat;
+    width: 100%;
+}
+
 #logo {
     width: 10%;
 }
@@ -76,14 +83,14 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .container {
     position: relative;
     color: white;
     font-size: 24px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #title {
@@ -95,4 +102,10 @@
     width: 50%;
     color: rgb(28, 109, 231);
     font-size: 60px;
+}
+
+#sgd7Info img[alt="SDG7"] {
+    width: 500px;
+    margin-top: 700px;
+    border-radius: 5%;
 }
