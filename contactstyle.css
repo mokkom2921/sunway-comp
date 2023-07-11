@@ -23,8 +23,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fdfafa52;
-    z-index: 2;
+    background-color: #d6d6d6e3;
 }
 
 nav .logo {
@@ -39,8 +38,20 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #424242;
     font-size: 17px;
+    font-weight: 500;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #3f1efc;
+}
+
+.navMenu li.active a {
+    color: #3f1efc;
 }
 
 .back-img {

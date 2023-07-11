@@ -27,7 +27,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fdfafa52;
+    background-color: #d6d6d6e3;
 }
 
 nav .logo {
@@ -42,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #424242;
     font-size: 17px;
 }
 
