@@ -24,6 +24,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #d6d6d6e3;
+    z-index: 100;
 }
 
 nav .logo {
@@ -262,7 +263,6 @@ input {
     padding: 0;
     list-style: none;
     text-align: center;
-    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -276,6 +276,7 @@ input {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
+    font-size: 18px;
 }
 
 .footer-basic .copyright {
