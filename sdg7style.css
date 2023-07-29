@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +6,14 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body {
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
     background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 50px;
 }
 
 .hero {
@@ -19,6 +24,9 @@ body {
     padding: 0 5%;
     display: flex;
 }
+
+
+/*navigation bar*/
 
 nav {
     width: 100%;
@@ -60,6 +68,9 @@ nav ul li a:hover {
     color: #3f1efc;
 }
 
+
+/*text on bg*/
+
 .content {
     text-align: left;
     margin: 200px 10px;
@@ -89,12 +100,18 @@ nav ul li a:hover {
     width: 500px;
 }
 
+
+/*bg img*/
+
 .back-img {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
 }
+
+
+/*content*/
 
 .container {
     margin: 70px 70px 0 70px;
@@ -119,6 +136,9 @@ nav ul li a:hover {
     font-family: serif;
 }
 
+
+/*text beside the first img*/
+
 .definition-left {
     float: right;
     text-align: end;
@@ -127,10 +147,21 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
+
+/*second img*/
+
 .right-img {
     float: right;
     width: 15cm;
     border-radius: 10%;
+}
+
+
+/*text beside the second img*/
+
+.text2 {
+    margin-top: 7cm;
+    margin-left: 20px;
 }
 
 .definition-right {
@@ -139,11 +170,6 @@ nav ul li a:hover {
     margin-top: 20px;
     max-width: 14cm;
     font-size: 18px;
-}
-
-.text2 {
-    margin-top: 7cm;
-    margin-left: 20px;
 }
 
 .text3 {
@@ -182,18 +208,7 @@ td {
 }
 
 
-/* demo styles */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-body {
-    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-    background: linear-gradient(to right, #25c481, #25b7c4);
-    font-family: 'Roboto', sans-serif;
-}
-
-section {
-    margin: 50px;
-}
+/*footer*/
 
 .footer-basic {
     padding: 40px 0;

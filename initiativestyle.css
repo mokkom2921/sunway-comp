@@ -23,6 +23,9 @@ body {
     display: flex;
 }
 
+
+/*navigation bar on the top*/
+
 nav .horizontal-menu-bar {
     width: 100%;
     position: fixed;
@@ -59,6 +62,9 @@ nav .horizontal-menu-bar ul li a {
     color: #424242;
     font-size: 17px;
 }
+
+
+/* menu bar beside the title news*/
 
 .menu {
     position: relative;
@@ -110,13 +116,6 @@ nav .horizontal-menu-bar ul li a {
     opacity: 1;
 }
 
-
-/**
-   * Add a pseudo element to cover the space
-   * between the links. This is so the menu
-   * does not lose :hover focus and disappear
-   */
-
 .menu:hover ul::before {
     position: absolute;
     content: "";
@@ -125,42 +124,19 @@ nav .horizontal-menu-bar ul li a {
     display: block;
     left: 50%;
     top: -5.0em;
-    /**
-     * The pseudo-element is a semi-circle
-     * created with CSS. Top, bottom, and right
-     * borders are 6.5em (left being 0), and then
-     * a border-radius is added to the two corners
-     * on the right.
-     */
     border-width: 6.5em;
     border-radius: 0 7.5em 7.5em 0;
     border-left: 0;
     border-style: solid;
-    /**
-     * Have to have a border color for the border
-     * to be hoverable. I'm using a very light one
-     * so that it looks invisible.
-     */
     border-color: rgba(0, 0, 0, 0.01);
-    /**
-     * Put the psuedo-element behind the links
-     * (So they can be clicked on)
-     */
     z-index: -1;
-    /**
-     * Make the cursor default so it looks like
-     * nothing is there
-     */
     cursor: default;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    /**
-     * This is to vertically center the text on the
-     * little tab-like things that the text is on.
-     */
+    /*This is to vertically center the text on the little tab-like things that the text is on.*/
     line-height: 1.5em;
     font-size: 19px;
 }
@@ -242,6 +218,9 @@ nav .horizontal-menu-bar ul li a {
     z-index: -1;
 }
 
+
+/*container for all section*/
+
 .container {
     margin: 40px;
     border: 1px solid grey;
@@ -259,6 +238,9 @@ nav .horizontal-menu-bar ul li a {
 .container h1 {
     color: white;
 }
+
+
+/*content*/
 
 .name-campaign {
     text-align: center;
@@ -406,6 +388,9 @@ h2 {
     }
 }
 
+
+/*picture on the bottom of container*/
+
 #gallery-font {
     font-size: 40px;
     text-align: center;
@@ -467,6 +452,9 @@ h2 {
 .gallery:hover .gallery_photo:not(:hover) {
     transform: scale(0.9);
 }
+
+
+/*footer*/
 
 .footer-basic {
     padding: 40px 0;

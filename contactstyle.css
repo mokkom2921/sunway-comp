@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 * {
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
 }
 
 .hero {
@@ -13,6 +26,9 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/*navigation bar*/
 
 nav {
     width: 100%;
@@ -55,6 +71,9 @@ nav ul li a:hover {
     color: #3f1efc;
 }
 
+
+/*background img*/
+
 .back-img {
     position: absolute;
     width: 100%;
@@ -64,6 +83,9 @@ nav ul li a:hover {
     z-index: -1;
 }
 
+
+/*form*/
+
 .signin-box {
     position: absolute;
     top: 50%;
@@ -72,23 +94,6 @@ nav ul li a:hover {
     text-align: center;
     border: 2px solid rgb(241, 229, 157);
     padding: 20px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    margin: -20px 0 50px;
 }
 
 h1 {
@@ -133,17 +138,8 @@ button {
     border-color: red;
 }
 
-button:active {
-    transform: scale(0.95);
-}
-
-button:focus {
-    outline: none;
-}
-
-button.ghost {
-    background-color: transparent;
-    border-color: red;
+button:hover {
+    transform: scale(1.1);
 }
 
 form {
@@ -249,6 +245,9 @@ input {
     transform: translateX(0);
     margin-top: 20px;
 }
+
+
+/*footer*/
 
 .footer-basic {
     padding: 20px 0;

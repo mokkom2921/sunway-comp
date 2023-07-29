@@ -1,8 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 .hero {
@@ -15,6 +20,9 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/*navigation bar*/
 
 nav {
     width: 100%;
@@ -56,6 +64,9 @@ nav ul li a:hover {
     color: #3f1efc;
 }
 
+
+/*text at the center*/
+
 .content {
     text-align: center;
 }
@@ -74,13 +85,7 @@ nav ul li a:hover {
 
 .content a {
     text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-size: 18px;
-    border: 2px solid #fff;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 20px;
+    color: white;
 }
 
 .back-img {
@@ -89,6 +94,75 @@ nav ul li a:hover {
     bottom: 0;
     z-index: -1;
 }
+
+.btn {
+    position: relative;
+    padding: 1.5rem 3rem;
+    padding-right: 2.6rem;
+    font-size: 1.4rem;
+    color: var(--inv);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    --def: #ffffff;
+    --inv: #fff;
+    width: 5%;
+    top: 50px;
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: var(--def);
+    transition-delay: .5s;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+}
+
+.btn:hover:after {
+    background: var(--inv);
+    transition-delay: .35s;
+    border-radius: 10%;
+}
+
+
+/*color flow in from Left */
+
+.from-left:before,
+.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left:before {
+    right: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left:after {
+    left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+    width: 100%;
+}
+
+
+/*footer*/
 
 .footer-basic {
     padding: 40px 0;
